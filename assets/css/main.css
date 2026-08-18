@@ -84,6 +84,12 @@ h1, h2, h3 {
   font-feature-settings: "ss01";
 }
 
+.display b {
+  font-weight: 500;
+  color: var(--accent);
+  font-feature-settings: "ss01";
+}
+
 .lede {
   font-size: 17px;
   line-height: 1.6;

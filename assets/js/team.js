@@ -5,23 +5,23 @@
       {
         name: "Lisa Yuen",
         role: "President",
-        photoUrl: "../assets/images/team/lisa.png",
+        photoUrl: "../assets/images/team/lisa.jpg",
         roleBio: "Leads SSU operations, strategy, governance, finances, and representation.",
         personalBio: "Fourth-year stats and neuroscience double major."
       },
       {
         name: "Evelyn Hughes",
         role: "Vice President, Internal",
-        photoUrl: "../assets/images/team/evelyn.png",
+        photoUrl: "../assets/images/team/evelyn.jpg",
         roleBio: "Oversees internal operations, administration, and executive coordination.",
-        personalBio: "Fourth-year applied math specialist and stats major"
+        personalBio: "Fourth-year applied math specialist and stats major."
       },
       {
         name: "Elodie Fan",
         role: "Vice President, External",
-        photoUrl: "../assets/images/team/elodie.png",
+        photoUrl: "../assets/images/team/elodie.jpg",
         roleBio: "Leads partnerships, outreach, sponsorships, and external communications.",
-        personalBio: "Elodie fill out :)"
+        personalBio: "Third-year statistics and computer science double major."
       },
       {
         name: "Open",
@@ -125,7 +125,7 @@
 
     return `
         <img 
-            src="../assets/images/team/no_photo.png"
+            src="../assets/images/team/hiring.png"
             alt="${member.name}"
             class="member__portrait">
     `;

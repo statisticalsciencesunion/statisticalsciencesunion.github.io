@@ -154,14 +154,41 @@
 
 
     function renderTeam() {
-    const teamGrid = document.getElementById("teamGrid");
+      const teamGrid = document.getElementById("teamGrid");
 
-    if (!teamGrid) return;
+      if (!teamGrid) return;
 
-    teamGrid.innerHTML = MEMBERS
+      teamGrid.innerHTML = MEMBERS
+          .map(renderMember)
+          .join("");
+    }
+
+    function renderTeamPreview(names) {
+      const teamGrid = document.getElementById("teamGrid");
+
+      if (!teamGrid) return;
+
+      const membersToRender = names
+        .map(name => MEMBERS.find(m => m.name === name))
+        .filter(Boolean)
+        .map(member => ({
+          ...member,
+          photoUrl: member.photoUrl.replace("../assets/", "assets/")
+        }));
+
+      teamGrid.innerHTML = membersToRender
         .map(renderMember)
         .join("");
     }
 
+    document.addEventListener("DOMContentLoaded", () => {
+      const teamGrid = document.getElementById("teamGrid");
+      if (!teamGrid) return;
 
-    document.addEventListener("DOMContentLoaded", renderTeam);
+      if (teamGrid.dataset.names) {
+        const names = teamGrid.dataset.names.split(",").map(n => n.trim());
+        renderTeamPreview(names);
+      } else {
+        renderTeam();
+      }
+    });

@@ -24,7 +24,7 @@ const MASTHEAD = `
     <nav class="masthead__nav" aria-label="Primary">
       <a href="${HOME}#about">About</a>
       <a href="${PAGES}team.html">Team</a>
-      <a href="${PAGES}resources.html">Resources</a>
+      <!-- <a href="${PAGES}resources.html">Resources</a> -->
       <a href="${HOME}#contact">Contact</a>
       <a href="${HOME}#join" class="btn btn--primary">Join</a>
     </nav>
@@ -70,7 +70,7 @@ const FOOTER = `
       <p class="footer__label">Navigate</p>
       <p><a href="${HOME}#about">About</a></p>
       <p><a href="${PAGES}team.html">Team</a></p>
-      <p><a href="${PAGES}resources.html">Resources</a></p>
+      <!-- <p><a href="${PAGES}resources.html">Resources</a></p> -->
     </div>
 
 
